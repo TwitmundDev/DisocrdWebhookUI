@@ -17,8 +17,7 @@ def validateLogin(title, body, username, url, desc):
 	data["embeds"] = [
 		{
 			"description": desc.get(),
-			"title": title.get(),
-			"icon_url": "https://avatars0.githubusercontent.com/u/14542790"
+			"title": title.get()
 		}
 	]
 
