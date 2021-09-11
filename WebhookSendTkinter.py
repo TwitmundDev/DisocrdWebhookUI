@@ -7,15 +7,12 @@ def validateLogin(title, body, username, url, desc):
 
 	username = username
 
-	url = url.get()  # webhook url, from here: https://i.imgur.com/f9XnAew.png
+	url = url.get()
 
-	# for all params, see https://discordapp.com/developers/docs/resources/webhook#execute-webhook
 	data = {
 		"username": username.get()
 	}
 
-	# leave this out if you dont want an embed
-	# for all params, see https://discordapp.com/developers/docs/resources/channel#embed-object
 	data["embeds"] = [
 		{
 			"description": desc.get(),
@@ -33,8 +30,6 @@ def validateLogin(title, body, username, url, desc):
 	else:
 		print("Payload delivered successfully, code {}.".format(result.status_code))
 
-	#print("username entered :", username.get())
-	#print("password entered :", password.get())
 	return
 
 #window
