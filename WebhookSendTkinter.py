@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from tkinter import *
 from functools import partial
 import requests #dependency
